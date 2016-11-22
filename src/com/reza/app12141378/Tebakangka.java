@@ -99,3 +99,12 @@ public class Tebakangka {
                    
                 }
                 while(!"exit".equals(nextLevel));
+                
+                } 
+            
+            for(int rO=0; rO<5; rO++){ // membuat array nilai pada tiap level, untuk kemudian dijumlahkan
+                Nilai=Nilai+aKumulasi[rO];  
+            }
+            skor.add(Nilai); // Menambahkan Nilai Akhir pada masing masing peserta
+            // SCORE SEMENTARA
+            if(!"y".equals(cariY)){ // Skore akan ditampilkan sementara, tetaapi jika y diinputkan, akan dilewati
