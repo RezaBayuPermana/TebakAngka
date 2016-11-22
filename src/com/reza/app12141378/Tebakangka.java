@@ -120,4 +120,14 @@ public class Tebakangka {
                     System.out.println("---------------");
             }
             
-        }        
+        }        while(!"y".equals(cariY)); // Jika diiputkan y, maka akan keluar
+        int jumPemain=namauser.size(); // Mengambil jumlah Rercord dalam array, dan untuk menghilangkan y paling belakang pada loop dikurangi 1 (-1)
+        System.out.println("SCORE AKHIR");
+        System.out.println("=================================");
+        int l;
+        for(l=0;l<jumPemain-1;l++){
+            System.out.println(namauser.get(l) + " : " + skor.get(l)); // Menampilkan Skore di Akhir permainan
+        }
+        System.out.println("=================================");
+    }
+}
