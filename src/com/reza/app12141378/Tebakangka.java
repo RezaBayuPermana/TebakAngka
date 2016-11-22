@@ -28,3 +28,11 @@ public class Tebakangka {
                 int PilihLevel=1;   // Untuk menentukan Level Pertama dan selanjutnya akan dinaikkan nilainya 
                 System.out.println("Selamat Datang " + cariY); // Untuk memberikan sambutan kepada Pemain
                 do{
+                    
+                int Kout, Ang, Pang;
+                    System.out.println("# Level " + PilihLevel);
+                    int StarNilaiO=PilihLevel-1;    
+                    Pang=PilihLevel*100; // Menaiikan Nilai dan Angka Random pada tiap level
+                    System.out.println("Silahkan Tebak Antara 1 s/d " + Pang);
+                    System.out.println("Anda mempunyai kesempatan menebak 5 kali.");
+                    int AngKaAcak=random1.nextInt(Pang); // Mulai mengacak Nomor
