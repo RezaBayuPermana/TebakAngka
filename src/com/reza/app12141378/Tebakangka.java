@@ -12,3 +12,10 @@ public class Tebakangka {
         Scanner input2= new Scanner(System.in); // Input kedua
         Random random1=new Random(); // Mengacak angka
         String cariY; // Untuk mencari nilai Y, jika input y, maka otomatis akan keluar
+        
+        do{
+            System.out.println("Masukkan 'Nama' anda atau tekan 'y' untuk keluar, kemudian tekan enter = ");
+            cariY=input1.nextLine();
+            namauser.add(cariY);
+            int Nilai = 0; // Variabel nilai 
+            int CekGameOver=0; // Cek Game over. bernilai 1 jika GameOver
