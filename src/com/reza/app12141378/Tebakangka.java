@@ -19,3 +19,12 @@ public class Tebakangka {
             namauser.add(cariY);
             int Nilai = 0; // Variabel nilai 
             int CekGameOver=0; // Cek Game over. bernilai 1 jika GameOver
+            int aKumulasi[]= new int[6]; // Membuat array nilai tiap level permainan
+            int NilaiPasJalan=0; // Varibel nilai
+            // Mulai Ngegame
+            if(!("y").equals(cariY)){  
+              // ------------------- START SCRIPT TEBAK DISINI --------------------------  
+                String nextLevel; // untuk Menaikkan Level
+                int PilihLevel=1;   // Untuk menentukan Level Pertama dan selanjutnya akan dinaikkan nilainya 
+                System.out.println("Selamat Datang " + cariY); // Untuk memberikan sambutan kepada Pemain
+                do{
