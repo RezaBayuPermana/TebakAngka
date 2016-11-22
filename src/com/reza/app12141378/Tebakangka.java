@@ -108,3 +108,16 @@ public class Tebakangka {
             skor.add(Nilai); // Menambahkan Nilai Akhir pada masing masing peserta
             // SCORE SEMENTARA
             if(!"y".equals(cariY)){ // Skore akan ditampilkan sementara, tetaapi jika y diinputkan, akan dilewati
+                
+            System.out.println("SCORE SEMENTARA");
+                    System.out.println("---------------");
+                    int xSemen, ySemen; // Dklarasi variabel loop dan array
+                    int xJumSemen=namauser.size();
+                  
+                    for(xSemen=0;xSemen<xJumSemen;xSemen++){ // Looping memunculkan nama dan nilai dalam array
+                        System.out.println(namauser.get(xSemen) + " : " + skor.get(xSemen));
+                    }
+                    System.out.println("---------------");
+            }
+            
+        }        
