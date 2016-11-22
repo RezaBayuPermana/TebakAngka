@@ -81,3 +81,21 @@ public class Tebakangka {
                             }
                         }
                     }
+                       
+                       if(CekGameOver>0){
+                        break;
+                    }
+                    // Level 5 adalah Level Maksimal
+                    if(PilihLevel==5){ // Jika sudah Mencapai Level 5, langsung di break/otomatis Exit
+                        break;
+                    }
+                    else{
+                    aKumulasi[StarNilaiO]=NilaiPasJalan; // Membuat Array Nilai   
+                    System.out.println("Ketik 'next' dan tekan enter untuk lanjut ke Level berikutnya atau ketik 'exit' untuk keluar : ");
+                    nextLevel=input1.nextLine(); // inputan next level atau exit
+                    PilihLevel++; // Level bertambah setelah input Next Level
+                    
+                    }
+                   
+                }
+                while(!"exit".equals(nextLevel));
